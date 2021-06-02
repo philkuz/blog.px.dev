@@ -18,7 +18,7 @@
 
 import React from 'react';
 import MDX from '@mdx-js/runtime';
-import mdxComponents from './index';
+import mdxComponents from './index.tsx';
 
 const parseMd = (input) => (
   <MDX components={mdxComponents}>

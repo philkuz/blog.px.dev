@@ -18,11 +18,11 @@
 
 import React from 'react';
 
-import baseComponents from './baseComponents';
-import SvgRenderer from './svg';
-import Command from './command';
-import Quote from './quote';
-import BlockQuote from './block-quote';
+import baseComponents from './baseComponents.tsx';
+import SvgRenderer from './svg.tsx';
+import Command from './command.tsx';
+import Quote from './quote.tsx';
+import BlockQuote from './block-quote.tsx';
 
 export default {
   ...baseComponents,

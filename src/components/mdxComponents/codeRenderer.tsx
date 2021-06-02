@@ -16,13 +16,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import { Box, Tooltip } from '@material-ui/core';
 import Highlight, { defaultProps } from 'prism-react-renderer';
-import React from 'react';
 import vsLight from 'prism-react-renderer/themes/duotoneLight';
 import vsDark from 'prism-react-renderer/themes/duotoneDark';
-import { ThemeModeContext } from '../mainThemeProvider';
+import { ThemeModeContext } from '../mainThemeProvider.tsx';
 import copyBtn from '../../images/copy-btn.svg';
 
 
@@ -98,7 +98,7 @@ const CodeRenderer = withStyles((theme) => ({
               {...defaultProps}
               code={code.trim()}
               language={language}
-              theme={theme == 'light' ? vsLight : vsDark}
+              theme={theme === 'light' ? vsLight : vsDark}
             >
               {({
                 className, style, tokens, getLineProps, getTokenProps,

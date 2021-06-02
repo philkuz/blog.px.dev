@@ -19,7 +19,7 @@
 import withStyles from '@material-ui/core/styles/withStyles';
 import React from 'react';
 import TableCell from '@material-ui/core/TableCell';
-import parseMd from './parseMd';
+import parseMd from './parseMd.tsx';
 
 const CustomTableCell = withStyles(() => ({
   td: {
@@ -32,7 +32,9 @@ const CustomTableCell = withStyles(() => ({
     parsableChildren = children.props.children.split('//').join('\n');
   }
   return (
-    <TableCell className={classes.td} align={align || undefined}>{parsableChildren ? parseMd(parsableChildren) : children}</TableCell>
+    <TableCell className={classes.td} align={align || undefined}>
+      {parsableChildren ? parseMd(parsableChildren) : children}
+    </TableCell>
   );
 });
 

@@ -18,7 +18,7 @@
 
 import * as React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import { ThemeModeContext } from '../mainThemeProvider';
+import { ThemeModeContext } from '../mainThemeProvider.tsx';
 
 const SvgRenderer = ({ src, title }) => (
   <StaticQuery

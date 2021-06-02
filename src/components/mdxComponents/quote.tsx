@@ -19,9 +19,8 @@
 import withStyles from '@material-ui/core/styles/withStyles';
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { Theme } from '@material-ui/core';
 
-const Quote = withStyles((theme: Theme) => ({
+const Quote = withStyles((theme) => ({
   quote: {
     padding: '30px 50px',
     fontFamily: 'Source Sans Pro',

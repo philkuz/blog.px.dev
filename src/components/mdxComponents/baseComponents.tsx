@@ -23,14 +23,14 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import { idFromSlug } from 'components/utils';
-import Code from './code';
+import { idFromSlug } from '../utils.ts';
+import Code from './code.tsx';
 import Pre from './pre';
-import AnchorTag from './anchor';
-import CodeRenderer from './codeRenderer';
-import ListItem from './listItem';
-import CustomTableCell from './custom-table-cell';
-import HLink from './h-link';
+import AnchorTag from './anchor.tsx';
+import CodeRenderer from './codeRenderer.tsx';
+import ListItem from './listItem.tsx';
+import CustomTableCell from './custom-table-cell.tsx';
+import HLink from './h-link.tsx';
 
 
 export default {

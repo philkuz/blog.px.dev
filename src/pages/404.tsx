@@ -19,7 +19,6 @@
 import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 import withStyles from '@material-ui/core/styles/withStyles';
-import { Theme } from '@material-ui/core';
 import img404 from '../images/404.svg';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
